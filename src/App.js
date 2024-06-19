@@ -58,7 +58,7 @@ function App() {
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>
               {" "}
-              <Rounded>{isOpen ? "Close" : "Menu"}</Rounded>
+              <Rounded>{isOpen ? "CLOSE" : "MENU"}</Rounded>
             </button>
           </div>
         </div>
@@ -96,7 +96,7 @@ function App() {
                       className={`text-center text-[14px] py-[9px]  w-[141px] text-black bg-white whitespace-nowrap  
                       rounded-[24px] `}
                     >
-                      My CV
+                      MY CV
                     </button>
                   </Magnetic>{" "}
                 </a>
