@@ -3,7 +3,7 @@ import "./App.css";
 import Magnetic from "./common/Magnetic";
 import { RevolveButton } from "./common/RevolveButton";
 import Rounded from "./common/RoundedButton";
-import {  a } from "react-router-dom";
+import { a } from "react-router-dom";
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,26 +34,26 @@ function App() {
           </div>
           <div className=" hidden md:flex items-center md:gap-[20px] lg:gap-[36px] xl:gap-[48px]">
             {" "}
-            < a  href="https://www.google.com/" target="_blank"  rel="noreferrer" >
+            <a href="https://www.google.com/" target="_blank" rel="noreferrer">
               {" "}
               <Rounded>MY THOUGHTS</Rounded>
-            </ a>
-            < a  href="https://www.google.com/" target="_blank"  rel="noreferrer" >
+            </a>
+            <a href="https://www.google.com/" target="_blank" rel="noreferrer">
               {" "}
               <Rounded>MY CV</Rounded>
-            </ a>
-            < a  href="https://www.google.com/" target="_blank"  rel="noreferrer" >
+            </a>
+            <a href="https://www.google.com/" target="_blank" rel="noreferrer">
               {" "}
               <Rounded>MY FITS</Rounded>
-            </ a>
-            < a  href="https://www.google.com/" target="_blank"  rel="noreferrer" >
+            </a>
+            <a href="https://www.google.com/" target="_blank" rel="noreferrer">
               {" "}
               <Rounded>MY CLASSES</Rounded>
-            </ a>
-            < a  href="https://www.google.com/" target="_blank"  rel="noreferrer" >
+            </a>
+            <a href="https://www.google.com/" target="_blank" rel="noreferrer">
               {" "}
               <Rounded>MY COMMUNITY</Rounded>
-            </ a>
+            </a>
           </div>
           <div className="md:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>
@@ -67,58 +67,93 @@ function App() {
             <ul className=" flex justify-center flex-col gap-3">
               <li>
                 {" "}
-                <Magnetic>
-                  <button
-                    className={`text-center text-[14px] py-[9px]  w-[141px] text-black bg-white whitespace-nowrap  
+                <a
+                  href="https://www.google.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <Magnetic>
+                    <button
+                      className={`text-center text-[14px] py-[9px]  w-[141px] text-black bg-white whitespace-nowrap  
                       rounded-[24px] `}
-                  >
-                    My Thoughts
-                  </button>
-                </Magnetic>
+                    >
+                      My Thoughts
+                    </button>
+                  </Magnetic>{" "}
+                </a>
               </li>
               <li>
                 {" "}
-                <Magnetic>
-                  <button
-                    className={`text-center text-[14px] py-[9px]  w-[141px] text-black bg-white whitespace-nowrap  
+                <a
+                  href="https://www.google.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <Magnetic>
+                    <button
+                      className={`text-center text-[14px] py-[9px]  w-[141px] text-black bg-white whitespace-nowrap  
                       rounded-[24px] `}
-                  >
-                    My CV
-                  </button>
-                </Magnetic>
+                    >
+                      My CV
+                    </button>
+                  </Magnetic>{" "}
+                </a>
               </li>
               <li>
                 {" "}
-                <Magnetic>
-                  <button
-                    className={`text-center text-[14px] py-[9px]   w-[141px] text-black bg-white whitespace-nowrap  
+                <a
+                  href="https://www.google.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <Magnetic>
+                    <button
+                      className={`text-center text-[14px] py-[9px]   w-[141px] text-black bg-white whitespace-nowrap  
                       rounded-[24px] `}
-                  >
-                    MY FITS
-                  </button>
-                </Magnetic>
+                    >
+                      MY FITS
+                    </button>
+                  </Magnetic>{" "}
+                </a>
               </li>
               <li>
                 {" "}
-                <Magnetic>
-                  <button
-                    className={`text-center text-[14px] py-[9px]  w-[141px]  text-black bg-white whitespace-nowrap  
+                <a
+                  href="https://www.google.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <Magnetic>
+                    <button
+                      className={`text-center text-[14px] py-[9px]  w-[141px]  text-black bg-white whitespace-nowrap  
                       rounded-[24px] `}
-                  >
-                    MY CLASSES
-                  </button>
-                </Magnetic>
+                    >
+                      MY CLASSES
+                    </button>
+                  </Magnetic>{" "}
+                </a>
               </li>
               <li>
                 {" "}
-                <Magnetic>
-                  <button
-                    className={`text-center text-[14px] py-[9px] w-[141px]  text-black bg-white whitespace-nowrap  
+                <a
+                  href="https://www.google.com/"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  {" "}
+                  <Magnetic>
+                    <button
+                      className={`text-center text-[14px] py-[9px] w-[141px]  text-black bg-white whitespace-nowrap  
                       rounded-[24px] `}
-                  >
-                    MY COMMUNITY
-                  </button>
-                </Magnetic>
+                    >
+                      MY COMMUNITY
+                    </button>
+                  </Magnetic>{" "}
+                </a>
               </li>
             </ul>
           </div>
@@ -165,7 +200,7 @@ function App() {
           </div>
         </div>
         <div className="flex justify-between items-center  md:ml-[46px] lg:ml-[56px] xl:ml-[63px]">
-          < a  href="https://www.google.com/" target="_blank"  rel="noreferrer" >
+          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
             {" "}
             <Rounded>
               {/* <button
@@ -175,42 +210,42 @@ function App() {
               My Kits
               {/* </button> */}
             </Rounded>
-          </ a>
+          </a>
 
-          < a  href="https://www.google.com/" target="_blank"  rel="noreferrer" >
+          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
             {" "}
             <Rounded>Let’s Chat</Rounded>
-          </ a>
+          </a>
         </div>
 
         <div className="flex justify-center items-center gap-[6px] md:gap-[22px] xl:gap-[32px] text-[#676767] font-medium leading-[14px] mt-[48px]">
-          < a  href="https://www.google.com/" target="_blank"  rel="noreferrer" >
+          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
             {" "}
             <p className="text-[14px] md:text-[16px]">FASHION</p>
-          </ a>
+          </a>
           <div className="h-[4px] w-[4px] rounded-full bg-[#676767]" />
-          < a  href="https://www.google.com/" target="_blank"  rel="noreferrer" >
+          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
             {" "}
             <p className="text-[14px] md:text-[16px]">BUSSINESS</p>
-          </ a>
+          </a>
           <div className="h-[4px] w-[4px] rounded-full bg-[#676767]" />
 
-          < a  href="https://www.google.com/" target="_blank"  rel="noreferrer" >
+          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
             {" "}
             <p className="text-[14px] md:text-[16px]">LIFESTYLE</p>
-          </ a>
+          </a>
           <div className="h-[4px] w-[4px] rounded-full bg-[#676767]" />
 
-          < a  href="https://www.google.com/" target="_blank"  rel="noreferrer" >
+          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
             {" "}
             <p className="text-[14px] md:text-[16px]">TRAVEL</p>
-          </ a>
+          </a>
           <div className="h-[4px] w-[4px] rounded-full bg-[#676767]" />
 
-          < a  href="https://www.google.com/" target="_blank"  rel="noreferrer" >
+          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
             {" "}
             <p className="text-[14px] md:text-[16px]">FOOD</p>
-          </ a>
+          </a>
         </div>
       </section>
     </div>
