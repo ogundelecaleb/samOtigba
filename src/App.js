@@ -12,7 +12,7 @@ function App() {
       <section
         id="hero"
         // ref={topEl}
-        className=" relative h-[926px] md:h-[850px] w-full bg-no-repeat bg-contain sm:bg-center py-[24px] px-[16px]  md:py-[32px] md:px-[48px]"
+        className=" relative h-[926px] md:h-[900px] w-full bg-no-repeat bg-contain sm:bg-center py-[24px] px-[16px]  md:py-[32px] md:px-[48px]"
       >
         <img
           className="absolute top-0 left-0 -z-10 h-full object-cover hidden md:flex"
@@ -29,7 +29,7 @@ function App() {
         <div className="flex items-center justify-between md:justify-start">
           <div className="z-10  transition-all duration-500 ease-out will-change-transform md:mr-[60px] lg:mr-[100px] xl:mr-[190px]">
             <RevolveButton>
-              <img src="/logo.png" alt="" />
+              <img src="/so.png" alt="" className="h-[29px] w-[43px]"/>
             </RevolveButton>
           </div>
           <div className=" hidden md:flex items-center md:gap-[20px] lg:gap-[36px] xl:gap-[48px]">
@@ -78,7 +78,7 @@ function App() {
                       className={`text-center text-[14px] py-[9px]  w-[141px] text-black bg-white whitespace-nowrap  
                       rounded-[24px] `}
                     >
-                      My Thoughts
+                      MY THOUGHTS
                     </button>
                   </Magnetic>{" "}
                 </a>
@@ -160,13 +160,13 @@ function App() {
         )}
 
         <div className=" mt-[182px] md:mt-[120px]  max-w-[271px] md:max-w-[390px]  ml-[32px] mb-[52px]  md:mb-[32px] md:ml-[46px] lg:ml-[56px] xl:ml-[63px]">
-          <h2 className="text-[66px] md:text-[100px] leading-[50px] md:leading-[80px] text-justify font-bold text-white tracking-normal">
+          <h2 className="text-[60px] md:text-[92px] leading-[50px] md:leading-[80px] text-center md:text-justify font-bold text-white tracking-wide md:max-w-[390px]">
             SAM<span className="text-[#676767]">UEL</span>
           </h2>
-          <h2 className="text-[66px] md:text-[100px] leading-[50px]   md:leading-[80px]  text-right font-bold text-white tracking-wider">
+          <h2 className="text-[66px] md:text-[100px] leading-[50px]   md:leading-[80px]  text-right font-bold text-white tracking-wider md:max-w-[390px]">
             OTIGBA
           </h2>
-          <h3 className="text-[24px] lg:text-[28px] md:text-[32px] md:leading-[32px]  text-right font-normal text-white tracking-normal mb-[40px]">
+          <h3 className="text-[24px] lg:text-[28px] md:text-[32px] md:leading-[32px]  text-right font-normal text-white tracking-normal  mb-[40px]">
             <span className="text-[#676767]">[</span> SO{" "}
             <span className="text-[#676767]">]</span>
           </h3>
@@ -191,7 +191,7 @@ function App() {
               <span className="text-[#676767]">through his </span> communities
               across Africa.
             </p>
-            <p>
+            <p className="">
               <span className="text-[#676767]">
                 Struggling to get your product to market?
               </span>{" "}
