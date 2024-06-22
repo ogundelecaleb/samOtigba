@@ -27,30 +27,30 @@ function App() {
         {/* <div className="w-full h-full absolute bg-[#000000]/30 left-0 top-0 -z-[8]"></div> */}
 
         <div className="flex items-center justify-between md:justify-start">
-          <div className="z-10  transition-all duration-500 ease-out will-change-transform md:mr-[60px] lg:mr-[100px] xl:mr-[190px]">
+          <div className="z-10  transition-all duration-500 ease-out will-change-transform md:mr-[60px] lg:mr-[100px] xl:mr-[220px]">
             <RevolveButton>
               <img src="/so.png" alt="" className="h-[29px] w-[43px]"/>
             </RevolveButton>
           </div>
           <div className=" hidden md:flex items-center md:gap-[20px] lg:gap-[36px] xl:gap-[48px]">
             {" "}
-            <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+            <a href="#" target="_blank" rel="noreferrer">
               {" "}
               <Rounded>MY THOUGHTS</Rounded>
             </a>
-            <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+            <a href="#" target="_blank" rel="noreferrer">
               {" "}
               <Rounded>MY CV</Rounded>
             </a>
-            <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+            <a href="#" target="_blank" rel="noreferrer">
               {" "}
               <Rounded>MY FITS</Rounded>
             </a>
-            <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+            <a href="#" target="_blank" rel="noreferrer">
               {" "}
               <Rounded>MY CLASSES</Rounded>
             </a>
-            <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+            <a href="#" target="_blank" rel="noreferrer">
               {" "}
               <Rounded>MY COMMUNITY</Rounded>
             </a>
@@ -63,12 +63,12 @@ function App() {
           </div>
         </div>
         {isOpen && (
-          <div className="absolute pt-[17px] transition-all duration-500 ease-out will-change-transform right-0  top-[100px] z-10 h-[298px] w-[152px] bg-[#676767] bg-opacity-40 ">
+          <div className="absolute pt-[32px] transition-all duration-500 ease-out will-change-transform right-0  top-[92px] z-10 h-[350px] w-[310px] bg-[#676767] bg-opacity-40 border-t-[1px] border-[#D9D9D9]  ">
             <ul className=" flex justify-center flex-col gap-3">
               <li>
                 {" "}
                 <a
-                  href="https://www.google.com/"
+                  href="#"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -86,7 +86,7 @@ function App() {
               <li>
                 {" "}
                 <a
-                  href="https://www.google.com/"
+                  href="#"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -104,7 +104,7 @@ function App() {
               <li>
                 {" "}
                 <a
-                  href="https://www.google.com/"
+                  href="#"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -122,7 +122,7 @@ function App() {
               <li>
                 {" "}
                 <a
-                  href="https://www.google.com/"
+                  href="#"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -140,7 +140,7 @@ function App() {
               <li>
                 {" "}
                 <a
-                  href="https://www.google.com/"
+                  href="#"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -200,49 +200,49 @@ function App() {
           </div>
         </div>
         <div className="flex justify-between items-center  md:ml-[46px] lg:ml-[56px] xl:ml-[63px]">
-          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+          <a href="https://links.myvendy.com/samuelotigba" target="_blank" rel="noreferrer">
             {" "}
             <Rounded>
               {/* <button
               className={`px-[38px] py-[16px]  text-black bg-white whitespace-nowrap  
                       rounded-[24px] `}
             > */}
-              My Kits
+              MEDIA KIT
               {/* </button> */}
             </Rounded>
           </a>
 
-          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+          <a href="#" target="_blank" rel="noreferrer">
             {" "}
-            <Rounded>Let’s Chat</Rounded>
+            <Rounded>LET'S CHAT</Rounded>
           </a>
         </div>
 
         <div className="flex justify-center items-center gap-[6px] md:gap-[22px] xl:gap-[32px] text-[#676767] font-medium leading-[14px] mt-[48px]">
-          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+          <a href="#" target="_blank" rel="noreferrer">
             {" "}
             <p className="text-[14px] md:text-[16px]">FASHION</p>
           </a>
           <div className="h-[4px] w-[4px] rounded-full bg-[#676767]" />
-          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+          <a href="#" target="_blank" rel="noreferrer">
             {" "}
             <p className="text-[14px] md:text-[16px]">BUSSINESS</p>
           </a>
           <div className="h-[4px] w-[4px] rounded-full bg-[#676767]" />
 
-          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+          <a href="#" target="_blank" rel="noreferrer">
             {" "}
             <p className="text-[14px] md:text-[16px]">LIFESTYLE</p>
           </a>
           <div className="h-[4px] w-[4px] rounded-full bg-[#676767]" />
 
-          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+          <a href="#" target="_blank" rel="noreferrer">
             {" "}
             <p className="text-[14px] md:text-[16px]">TRAVEL</p>
           </a>
           <div className="h-[4px] w-[4px] rounded-full bg-[#676767]" />
 
-          <a href="https://www.google.com/" target="_blank" rel="noreferrer">
+          <a href="#" target="_blank" rel="noreferrer">
             {" "}
             <p className="text-[14px] md:text-[16px]">FOOD</p>
           </a>
