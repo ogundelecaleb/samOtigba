@@ -34,23 +34,37 @@ function App() {
           </div>
           <div className=" hidden md:flex items-center md:gap-[20px] lg:gap-[36px] xl:gap-[48px]">
             {" "}
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href="#"
+            
+            // target="_blank" rel="noreferrer"
+            >
               {" "}
               <Rounded>MY THOUGHTS</Rounded>
             </a>
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href="#" 
+            // target="_blank" rel="noreferrer"
+            >
               {" "}
               <Rounded>MY CV</Rounded>
             </a>
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href="#"
+            //  target="_blank" rel="noreferrer"
+            >
               {" "}
               <Rounded>MY FITS</Rounded>
             </a>
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href="#"
+            
+            // target="_blank" rel="noreferrer"
+            
+            >
               {" "}
               <Rounded>MY CLASSES</Rounded>
             </a>
-            <a href="#" target="_blank" rel="noreferrer">
+            <a 
+            // href="#" target="_blank" rel="noreferrer"
+            
+            >
               {" "}
               <Rounded>MY COMMUNITY</Rounded>
             </a>
@@ -69,8 +83,8 @@ function App() {
                 {" "}
                 <a
                   href="#"
-                  target="_blank"
-                  rel="noreferrer"
+                  // target="_blank"
+                  // rel="noreferrer"
                 >
                   {" "}
                   <Magnetic>
@@ -87,8 +101,8 @@ function App() {
                 {" "}
                 <a
                   href="#"
-                  target="_blank"
-                  rel="noreferrer"
+                  // target="_blank"
+                  // rel="noreferrer"
                 >
                   {" "}
                   <Magnetic>
@@ -105,8 +119,8 @@ function App() {
                 {" "}
                 <a
                   href="#"
-                  target="_blank"
-                  rel="noreferrer"
+                  // target="_blank"
+                  // rel="noreferrer"
                 >
                   {" "}
                   <Magnetic>
@@ -123,8 +137,8 @@ function App() {
                 {" "}
                 <a
                   href="#"
-                  target="_blank"
-                  rel="noreferrer"
+                  // target="_blank"
+                  // rel="noreferrer"
                 >
                   {" "}
                   <Magnetic>
@@ -141,8 +155,8 @@ function App() {
                 {" "}
                 <a
                   href="#"
-                  target="_blank"
-                  rel="noreferrer"
+                  // target="_blank"
+                  // rel="noreferrer"
                 >
                   {" "}
                   <Magnetic>
@@ -212,37 +226,56 @@ function App() {
             </Rounded>
           </a>
 
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="#"
+          //  target="_blank" rel="noreferrer"
+           >
             {" "}
             <Rounded>LET'S CHAT</Rounded>
           </a>
         </div>
 
         <div className="flex justify-center items-center gap-[6px] md:gap-[22px] xl:gap-[32px] text-[#676767] font-medium leading-[14px] mt-[48px]">
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="#"
+          //  target="_blank" rel="noreferrer"
+          
+          >
             {" "}
             <p className="text-[14px] md:text-[16px]">FASHION</p>
           </a>
           <div className="h-[4px] w-[4px] rounded-full bg-[#676767]" />
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="#"
+          //  target="_blank" rel="noreferrer"
+          >
             {" "}
             <p className="text-[14px] md:text-[16px]">BUSSINESS</p>
           </a>
           <div className="h-[4px] w-[4px] rounded-full bg-[#676767]" />
 
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="#"
+          
+          // target="_blank" rel="noreferrer"
+          
+          >
             {" "}
             <p className="text-[14px] md:text-[16px]">LIFESTYLE</p>
           </a>
           <div className="h-[4px] w-[4px] rounded-full bg-[#676767]" />
 
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="#"
+          
+          // target="_blank" rel="noreferrer"
+          
+          >
             {" "}
             <p className="text-[14px] md:text-[16px]">TRAVEL</p>
           </a>
           <div className="h-[4px] w-[4px] rounded-full bg-[#676767]" />
 
-          <a href="#" target="_blank" rel="noreferrer">
+          <a href="#"
+          
+          // target="_blank" rel="noreferrer"
+          
+          >
             {" "}
             <p className="text-[14px] md:text-[16px]">FOOD</p>
           </a>
