@@ -63,7 +63,7 @@ function App() {
           </div>
         </div>
         {isOpen && (
-          <div className="absolute pt-[32px] transition-all duration-500 ease-out will-change-transform right-0  top-[92px] z-10 h-[350px] w-[310px] bg-[#676767] bg-opacity-40 border-t-[1px] border-[#D9D9D9]  ">
+          <div className="absolute pt-[32px] transition-all duration-500 ease-out will-change-transform right-0  md:hidden top-[92px] z-10 h-[350px] w-[310px] bg-[#676767] bg-opacity-40 border-t-[1px] border-[#D9D9D9]  ">
             <ul className=" flex justify-center flex-col gap-3">
               <li>
                 {" "}
