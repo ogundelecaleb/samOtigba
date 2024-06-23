@@ -39,40 +39,42 @@ function App() {
           <div className=" hidden lg:flex lg:flex-1 items-center  md:gap-[10px] lg:gap-[36px] xl:gap-[48px]">
             {" "}
             <a
-              href="#"
-
-              // target="_blank" rel="noreferrer"
+              href="https://x.com/SamuelOtigba"
+              target="_blank"
+              rel="noreferrer"
             >
               {" "}
               <Rounded>MY THOUGHTS</Rounded>
             </a>
             <a
-              href="#"
-              // target="_blank" rel="noreferrer"
+              href="https://www.linkedin.com/in/samuelotigba/"
+              target="_blank"
+              rel="noreferrer"
             >
               {" "}
               <Rounded>MY CV</Rounded>
             </a>
             <a
-              href="#"
-              //  target="_blank" rel="noreferrer"
+              href="https://www.instagram.com/samuelotigba/"
+              target="_blank"
+              rel="noreferrer"
             >
-              {" "}
               <Rounded>MY FITS</Rounded>
             </a>
             <a
-              href="#"
-
-              // target="_blank" rel="noreferrer"
+              href="https://youtube.com/@samuelotigba?si=j_Pwlbw3p7AHAZMB"
+              target="_blank"
+              rel="noreferrer"
             >
               {" "}
               <Rounded>MY CLASSES</Rounded>
             </a>
             <a
-              // href="#" target="_blank" rel="noreferrer"
+              href="https://whatsapp.com/channel/0029VainmhA0rGiHHG7YKo3b"
+              target="_blank"
+              rel="noreferrer"
               className="hidden lg:block"
             >
-              {" "}
               <Rounded>MY COMMUNITY</Rounded>
             </a>
           </div>
@@ -89,9 +91,9 @@ function App() {
               <li>
                 {" "}
                 <a
-                  href="#"
-                  // target="_blank"
-                  // rel="noreferrer"
+                  href="https://x.com/SamuelOtigba"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   {" "}
                   <Magnetic>
@@ -107,9 +109,9 @@ function App() {
               <li>
                 {" "}
                 <a
-                  href="#"
-                  // target="_blank"
-                  // rel="noreferrer"
+                  href="https://www.linkedin.com/in/samuelotigba/     "
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   {" "}
                   <Magnetic>
@@ -125,9 +127,9 @@ function App() {
               <li>
                 {" "}
                 <a
-                  href="#"
-                  // target="_blank"
-                  // rel="noreferrer"
+                  href="https://www.instagram.com/samuelotigba/"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   {" "}
                   <Magnetic>
@@ -143,9 +145,9 @@ function App() {
               <li>
                 {" "}
                 <a
-                  href="#"
-                  // target="_blank"
-                  // rel="noreferrer"
+                  href="https://youtube.com/@samuelotigba?si=j_Pwlbw3p7AHAZMB"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   {" "}
                   <Magnetic>
@@ -161,9 +163,9 @@ function App() {
               <li>
                 {" "}
                 <a
-                  href="#"
-                  // target="_blank"
-                  // rel="noreferrer"
+                  href="https://whatsapp.com/channel/0029VainmhA0rGiHHG7YKo3b"
+                  target="_blank"
+                  rel="noreferrer"
                 >
                   {" "}
                   <Magnetic>
