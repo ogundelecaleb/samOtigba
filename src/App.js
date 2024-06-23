@@ -26,13 +26,17 @@ function App() {
         />
         {/* <div className="w-full h-full absolute bg-[#000000]/30 left-0 top-0 -z-[8]"></div> */}
 
-        <div className="flex items-center justify-between md:justify-start">
-          <div className="z-10  transition-all duration-500 ease-out will-change-transform md:mr-[60px] lg:mr-[100px] xl:mr-[220px]">
+        <div className="flex items-center  lg:gap-[100px] xl:gap-[220px] justify-between lg:justify-start">
+          <div className="z-10  transition-all duration-500 ease-out will-change-transform  ">
             <RevolveButton>
-              <img src="/so.png" alt="" className="h-[29px] w-[43px]" />
+              <img
+                src="/so.png"
+                alt=""
+                className="h-[29px] w-[43px] flex-shrink-0 "
+              />
             </RevolveButton>
           </div>
-          <div className=" hidden md:flex items-center md:gap-[20px] lg:gap-[36px] xl:gap-[48px]">
+          <div className=" hidden lg:flex lg:flex-1 items-center  md:gap-[10px] lg:gap-[36px] xl:gap-[48px]">
             {" "}
             <a
               href="#"
@@ -65,13 +69,14 @@ function App() {
               <Rounded>MY CLASSES</Rounded>
             </a>
             <a
-            // href="#" target="_blank" rel="noreferrer"
+              // href="#" target="_blank" rel="noreferrer"
+              className="hidden lg:block"
             >
               {" "}
               <Rounded>MY COMMUNITY</Rounded>
             </a>
           </div>
-          <div className="md:hidden">
+          <div className="lg:hidden">
             <button onClick={() => setIsOpen(!isOpen)}>
               {" "}
               <Rounded>{isOpen ? "CLOSE" : "MENU"}</Rounded>
@@ -79,7 +84,7 @@ function App() {
           </div>
         </div>
         {isOpen && (
-          <div className="absolute pt-[32px] transition-all duration-500 ease-out will-change-transform right-0  md:hidden top-[92px] z-10 h-[350px] w-[310px] bg-[#676767] bg-opacity-40 border-t-[1px] border-[#D9D9D9]  ">
+          <div className="absolute pt-[32px] transition-all duration-500 ease-out will-change-transform right-0  lg:hidden top-[92px] z-10 h-[350px] w-[310px] bg-[#676767] bg-opacity-40 border-t-[1px] border-[#D9D9D9]  ">
             <ul className=" flex justify-center flex-col gap-3">
               <li>
                 {" "}
@@ -217,6 +222,14 @@ function App() {
         </div>
         <div className="flex justify-between items-center  md:ml-[46px] lg:ml-[56px] xl:ml-[63px]">
           <a
+            href="https://links.myvendy.com/samuelotigba"
+            target="_blank"
+            rel="noreferrer"
+          >
+            {" "}
+            <Rounded>LET'S CHAT</Rounded>
+          </a>
+          <a
             href="#"
             //  target="_blank" rel="noreferrer"
           >
@@ -230,18 +243,9 @@ function App() {
               {/* </button> */}
             </Rounded>
           </a>
-
-          <a
-            href="https://links.myvendy.com/samuelotigba"
-            target="_blank"
-            rel="noreferrer"
-          >
-            {" "}
-            <Rounded>LET'S CHAT</Rounded>
-          </a>
         </div>
 
-        <div className="flex justify-center items-center gap-[6px] md:gap-[22px] xl:gap-[32px] text-[#676767] font-medium leading-[14px] mt-[48px]">
+        <div className="flex justify-center items-center gap-[6px] md:gap-[22px] xl:gap-[32px] text-[#676767] font-medium leading-[14px] mt-[48px] md:mt-[140px]">
           <a
             href="#"
             //  target="_blank" rel="noreferrer"
