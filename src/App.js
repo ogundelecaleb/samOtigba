@@ -182,40 +182,40 @@ function App() {
           </div>
         )}
 
-        <div className=" mt-[182px] md:mt-[120px]  max-w-[271px] md:max-w-[390px]  ml-[32px] mb-[52px]  md:mb-[32px] md:ml-[46px] lg:ml-[56px] xl:ml-[63px]">
+        <div className=" mt-[182px] md:mt-[120px]  max-w-[271px] md:max-w-[390px]   mb-[52px]  md:mb-[32px] md:ml-[46px] lg:ml-[56px] xl:ml-[63px]">
           <h2 className="text-[60px] md:text-[92px] leading-[50px] md:leading-[80px] text-center md:text-justify font-bold text-white tracking-wide md:max-w-[390px]">
-            SAM<span className="text-[#676767]">UEL</span>
+            SAM<span className="text-[#676767] ">UEL</span>
           </h2>
           <h2 className="text-[66px] md:text-[100px] leading-[50px]   md:leading-[80px]  text-right font-bold text-white tracking-wider md:max-w-[390px]">
             OTIGBA
           </h2>
           <h3 className="text-[24px] lg:text-[28px] md:text-[32px] md:leading-[32px]  text-right font-normal text-white tracking-normal  mb-[40px]">
-            <span className="text-[#676767]">[</span> SO{" "}
-            <span className="text-[#676767]">]</span>
+            <span className="text-[#676767] ">[</span> SO{" "}
+            <span className="text-[#676767] font-normal">]</span>
           </h3>
-          <div className="text-white text-[14px] font-normal  text-justify tracking-tight leading-[21px]">
+          <div className="text-white text-[14px] font-bold   text-justify tracking-tight leading-[21px]">
             <p className="mb-[8px] ">
               Samuel Otigba{" "}
-              <span className="text-[#676767]">is a seasoned growth &</span> GTM
+              <span className="text-[#676767] font-normal">is a seasoned growth &</span> GTM
               specialist{" "}
-              <span className="text-[#676767]">
+              <span className="text-[#676767] font-normal">
                 with a wealth of experience in assisting businesses{" "}
               </span>{" "}
               in bringing their products to market.
             </p>
             <p className="mb-[24px] ">
-              <span className="text-[#676767]">He is also a </span> digital
+              <span className="text-[#676767] font-normal">He is also a </span> digital
               philanthropist{" "}
-              <span className="text-[#676767]">who supports the </span> tech{" "}
-              <span className="text-[#676767]">and </span>
-              creative ecosystem <span className="text-[#676767]">by</span>{" "}
+              <span className="text-[#676767] font-normal">who supports the </span> tech{" "}
+              <span className="text-[#676767] font-normal">and </span>
+              creative ecosystem <span className="text-[#676767] font-normal">by</span>{" "}
               connecting job seekers{" "}
-              <span className="text-[#676767]"> with their</span> dream careers{" "}
-              <span className="text-[#676767]">through his </span> communities
+              <span className="text-[#676767] font-normal"> with their</span> dream careers{" "}
+              <span className="text-[#676767] font-normal">through his </span> communities
               across Africa.
             </p>
             <p className="">
-              <span className="text-[#676767]">
+              <span className="text-[#676767] font-normal">
                 Struggling to get your product to market?
               </span>{" "}
               Let’s talk. Send a DM.
@@ -247,7 +247,7 @@ function App() {
           </a>
         </div>
 
-        <div className="flex justify-center items-center gap-[6px] md:gap-[22px] xl:gap-[32px] text-[#676767] font-medium leading-[14px] mt-[48px] md:mt-[140px]">
+        <div className="flex justify-center items-center gap-[6px] md:gap-[22px] xl:gap-[32px] text-[#676767] font-normal font-medium leading-[14px] mt-[48px] md:mt-[140px]">
           <a
             href="#"
             //  target="_blank" rel="noreferrer"
