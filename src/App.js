@@ -183,10 +183,10 @@ function App() {
         )}
 
         <div className=" mt-[182px] md:mt-[120px]  max-w-[271px] md:max-w-[390px]   mb-[52px]  md:mb-[32px] md:ml-[46px] lg:ml-[56px] xl:ml-[63px]">
-          <h2 className="text-[60px] md:text-[92px] leading-[50px] md:leading-[80px] text-center md:text-justify font-bold text-white tracking-wide md:max-w-[390px]">
+          <h2 className="text-[60px] md:text-[92px] leading-[50px] md:leading-[80px] text-center md:text-justify font-bold text-white tracking-widest md:tracking-wide md:max-w-[390px] max-w-[271px]">
             SAM<span className="text-[#676767] ">UEL</span>
           </h2>
-          <h2 className="text-[66px] md:text-[100px] leading-[50px]   md:leading-[80px]  text-right font-bold text-white tracking-wider md:max-w-[390px]">
+          <h2 className="text-[66px] md:text-[100px] leading-[50px]   md:leading-[80px]  text-right font-bold text-white tracking-widest md:tracking-wider md:max-w-[390px]">
             OTIGBA
           </h2>
           <h3 className="text-[24px] lg:text-[28px] md:text-[32px] md:leading-[32px]  text-right font-normal text-white tracking-normal  mb-[40px]">
