@@ -8,19 +8,19 @@ import { a } from "react-router-dom";
 function App() {
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <div className="App">
+    <div className="bg-[#050505] h-screen">
       <section
         id="hero"
         // ref={topEl}
-        className=" relative h-[926px] md:h-[900px] w-full bg-no-repeat bg-contain sm:bg-center py-[24px] px-[16px]  md:py-[32px] md:px-[48px]"
+        className=" relative h-[926px] md:h-screen w-full bg-no-repeat bg-contain sm:bg-center py-[24px] px-[16px]  md:py-[32px] md:px-[48px]"
       >
         <img
-          className="absolute top-0 left-0 -z-10 h-full object-cover hidden md:flex"
+          className="absolute top-0 left-0  h-[120vh] object-cover hidden md:flex"
           src="/samDesktop.png"
           alt=""
         />
         <img
-          className="absolute top-0 left-0 -z-10 h-full w-full object-cover md:hidden "
+          className="absolute top-0 left-0  h-full w-full object-cover md:hidden "
           src="/MobileSam.png"
           alt=""
         />
@@ -86,7 +86,7 @@ function App() {
           </div>
         </div>
         {isOpen && (
-          <div className="absolute pt-[32px] transition-all duration-500 ease-out will-change-transform right-0  lg:hidden top-[92px] z-10 h-[350px] w-[310px] bg-[#676767] bg-opacity-40 border-t-[1px] border-[#D9D9D9]  ">
+          <div className="absolute pt-[32px] transition-all duration-500 ease-out will-change-transform right-0  lg:hidden top-[92px] z-50 h-[350px] w-[310px] bg-[#676767] bg-opacity-40 border-t-[1px] border-[#D9D9D9]  ">
             <ul className=" flex justify-center flex-col gap-3">
               <li>
                 {" "}
@@ -182,7 +182,7 @@ function App() {
           </div>
         )}
 
-        <div className=" mt-[182px] md:mt-[120px]  max-w-[271px] md:max-w-[390px]   mb-[52px]  md:mb-[32px] md:ml-[46px] lg:ml-[56px] xl:ml-[63px]">
+        <div className=" mt-[182px] md:mt-[190px]  sticky  max-w-[271px] md:max-w-[390px] z-50  mb-[52px]  md:mb-[64px] md:ml-[46px] lg:ml-[56px] xl:ml-[63px]">
           <h2 className="text-[60px] md:text-[92px] leading-[50px] md:leading-[80px] text-center md:text-justify font-bold text-white tracking-widest md:tracking-wide md:max-w-[390px] max-w-[271px]">
             SAM<span className="text-[#676767] ">UEL</span>
           </h2>
@@ -247,7 +247,7 @@ function App() {
           </a>
         </div>
 
-        <div className="flex justify-center items-center gap-[6px] md:gap-[22px] xl:gap-[32px] text-[#676767] font-normal font-medium leading-[14px] mt-[48px] md:mt-[140px]">
+        <div className="flex justify-center sticky items-center gap-[6px] md:gap-[22px] xl:gap-[32px] text-[#676767]  font-medium leading-[14px] mt-[70px] md:mt-[120px]">
           <a
             href="#"
             //  target="_blank" rel="noreferrer"
