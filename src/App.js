@@ -86,8 +86,8 @@ function App() {
           </div>
         </div>
         {isOpen && (
-          <div className="absolute pt-[32px] transition-all duration-500 ease-out will-change-transform right-0  lg:hidden top-[92px] z-50 h-[350px] w-[310px] bg-[#676767] bg-opacity-40 border-t-[1px] border-[#D9D9D9]  ">
-            <ul className=" flex justify-center flex-col gap-3">
+          <div className="absolute flex justify-center pt-[32px] z-50 transition-all duration-500 ease-out will-change-transform right-0  lg:hidden top-[92px]  h-[350px] w-[310px] bg-[#676767] bg-opacity-40 border-t-[1px] border-[#D9D9D9]  ">
+            <ul className=" flex flex-col gap-3">
               <li>
                 {" "}
                 <a
@@ -182,7 +182,7 @@ function App() {
           </div>
         )}
 
-        <div className=" mt-[182px] md:mt-[190px]  sticky  max-w-[271px] md:max-w-[390px] z-50  mb-[52px]  md:mb-[64px] md:ml-[46px] lg:ml-[56px] xl:ml-[63px]">
+        <div className=" mt-[182px] md:mt-[190px]  sticky  max-w-[271px] md:max-w-[390px] z-20  mb-[52px]  md:mb-[64px] md:ml-[46px] lg:ml-[56px] xl:ml-[63px]">
           <h2 className="text-[60px] md:text-[92px] leading-[50px] md:leading-[80px] text-center md:text-justify font-bold text-white tracking-widest md:tracking-wide md:max-w-[390px] max-w-[271px]">
             SAM<span className="text-[#676767] ">UEL</span>
           </h2>
