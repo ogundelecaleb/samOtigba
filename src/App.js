@@ -12,10 +12,10 @@ function App() {
       <section
         id="hero"
         // ref={topEl}
-        className=" relative h-[926px] md:h-[900px] w-full bg-no-repeat bg-contain sm:bg-center py-[24px] px-[16px]  md:py-[32px] md:px-[48px]"
+        className=" relative h-[926px] md:h-screen w-full bg-no-repeat bg-contain sm:bg-center py-[24px] px-[16px]  md:py-[32px] md:px-[48px]"
       >
         <img
-          className="absolute top-0 left-0 -z-10 h-full object-cover hidden md:flex"
+          className="absolute top-0 left-0 -z-10 h-full w-full object-cover hidden md:flex"
           src="/samDesktop.png"
           alt=""
         />
@@ -182,7 +182,7 @@ function App() {
           </div>
         )}
 
-        <div className=" mt-[182px] md:mt-[120px]  max-w-[271px] md:max-w-[390px]   mb-[52px]  md:mb-[32px] md:ml-[46px] lg:ml-[56px] xl:ml-[63px]">
+        <div className=" mt-[182px] md:mt-[10%]  max-w-[271px] md:max-w-[390px]   mb-[52px]  md:mb-[32px] md:ml-[46px] lg:ml-[56px] xl:ml-[63px]">
           <h2 className="text-[60px] md:text-[92px] leading-[50px] md:leading-[80px] text-center md:text-justify font-bold text-white tracking-widest md:tracking-wide md:max-w-[390px] max-w-[271px]">
             SAM<span className="text-[#676767] ">UEL</span>
           </h2>
@@ -247,7 +247,7 @@ function App() {
           </a>
         </div>
 
-        <div className="flex justify-center items-center gap-[6px] md:gap-[22px] xl:gap-[32px] text-[#676767] font-normal font-medium leading-[14px] mt-[48px] md:mt-[140px]">
+        <div className="flex justify-center items-center gap-[6px] md:gap-[22px] xl:gap-[32px] text-[#676767] leading-[14px] mt-[5%] md:mt-[4%] xl:mt-[2%]  ">
           <a
             href="#"
             //  target="_blank" rel="noreferrer"
