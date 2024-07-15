@@ -12,7 +12,7 @@ function App() {
       <section
         id="hero"
         // ref={topEl}
-        className=" relative h-[926px] md:h-screen w-full bg-no-repeat bg-contain sm:bg-center py-[24px] px-[16px]  md:py-[32px] md:px-[48px]"
+        className=" relative h-[926px] md:h-[1200px] md:min-h-screen xl:h-[110vh] w-full bg-no-repeat bg-contain sm:bg-center py-[24px] px-[16px]  md:py-[32px] md:px-[48px]"
       >
         <img
           className="absolute top-0 left-0 -z-10 h-full w-full object-cover hidden md:flex"
