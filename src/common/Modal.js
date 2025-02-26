@@ -3,6 +3,7 @@ const Modal = ({ isOpen, onClose, children }) => {
     const modalStyle = {
         display: isOpen ? 'block' : 'none',
     };
+    
     return (
         <div style={modalStyle} className="fixed inset-0 z-40 overflow-y-auto" aria-labelledby="modal-title" role="dialog"
             aria-modal="true" >
