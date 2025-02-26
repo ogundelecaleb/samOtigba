@@ -31,7 +31,7 @@ const Navbar = () => {
   
   ];
   return (
-    <div className='bg-[#000000] z-20 fixed md:block top-0 left-0 right-0 py-[24px] px-[16px]  md:py-[32px]   md:px-[48px]'>
+    <div className='bg-[#000000] z-20 fixed md:relative top-0 left-0 right-0 py-[24px] px-[16px]  md:py-[32px]   md:px-[48px]'>
       <div className="flex items-center  lg:gap-[100px] justify-between  ">
       <m.div
               initial={{ x: -20, opacity: 0.4 }}

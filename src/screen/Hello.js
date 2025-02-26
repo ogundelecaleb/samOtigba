@@ -30,7 +30,7 @@ const Hello = () => {
       <img
             src="/samImage.jpeg"
             alt="sam otigba"
-            className="  absolute bottom-0 -z-10 opacity-70 "
+            className=" md:hidden  absolute bottom-0 -z-10 opacity-70 "
           />
        
         <div className="w-full md:w-[40%] relative  hidden md:block">
