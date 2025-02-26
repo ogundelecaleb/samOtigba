@@ -49,6 +49,7 @@ const Shop = () => {
           Each piece is designed to be worn individually or as a full ensemble.
         </p>
 
+
         <div className=" mt-6 md:mt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[40px] md:gap-[50px] xl:gap-[69px]">
           {product?.map((item, index) => (
             <div>
