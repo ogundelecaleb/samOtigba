@@ -9,6 +9,7 @@
     "animate.css": "^4.1.1",
     "framer-motion": "^10.16.4",
     "gsap": "^3.12.2",
+    "lucide-react": "^0.476.0",
     "react": "^18.3.1",
     "react-animate-on-scroll": "^2.1.7",
     "react-dom": "^18.3.1",
