@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Rounded from "../common/RoundedButton";
-import { RevolveButton } from "../common/RevolveButton";
 import { Link, useLocation } from "react-router-dom";
 import Navbar from "../common/Navbar";
 import Modal from "../common/Modal";
@@ -17,22 +15,21 @@ const Hello = () => {
   };
   const handleClickModal = () => {
     setModal(true);
+    handleClose();
   };
   const handleCloseModal = () => {
     setModal(false);
   };
 
   return (
-    <div  className="bg-[#000000]  mt-20 md:mt-0 min-h-[90vh]   w-full pb-[24px] px-[16px]  md:pb-[32px] md:pr-[48px]">
-      
+    <div className="bg-[#000000]  mt-20 md:mt-0 min-h-[90vh]   w-full pb-[24px] px-[16px]  md:pb-[32px] md:pr-[48px]">
       <div className=" relative min-h-[90vh]  z-10  flex flex-col md:flex-row  gap-[30px] xl:gap-[30px]  ">
-       
-      <img
-            src="/samImage.jpeg"
-            alt="sam otigba"
-            className=" md:hidden  absolute bottom-0 -z-10 opacity-70 "
-          />
-       
+        <img
+          src="/samImage.jpeg"
+          alt="sam otigba"
+          className=" md:hidden  absolute bottom-0 -z-10 opacity-70 "
+        />
+
         <div className="w-full md:w-[40%] relative  hidden md:block">
           <img
             src="/samHeroImage.png"
@@ -44,11 +41,11 @@ const Hello = () => {
           <h3 className="text-[#737373]  text-[40px] md:text-[56px] lg:text-[72px] xl:text-[80px] leading-8">
             MEET
           </h3>
-          <h3 className="text-[#ffffff] font-semibold text-[40px] md:text-[56px] lg:text-[68px] xl:text-[72px] leading-tight">
+          <h3 className="text-[#ffffff] font-semibold text-[40px] md:text-[50px] lg:text-[62px] xl:text-[72px] leading-tight">
             SAM OTIGBA <span className="text-[#737373] "> {">"}</span> S.0
           </h3>
 
-          <p className="text-gray-50 uppercase text-sm md:text-base lg:text-[18px] text-justify font-light mt-[40px] md:mt-[30px] mb-[70px] md:mb-[90px] xl:mb-[100px]">
+          <p className="text-gray-50  text-sm md:text-base lg:text-[18px] text-justify font-light mt-[40px] md:mt-[30px] mb-[70px] md:mb-[90px] xl:mb-[100px]">
             A multi-disciplinary creative, product designer, artist, and brand
             strategist whose work spans fashion, tech, and art. A connector of
             ideas and people, he has designed iconic pieces, mentored emerging
@@ -74,12 +71,12 @@ const Hello = () => {
               <p className="text-[12px] mb-1 text-center  font-light text-gray-50">
                 READ ALL ABOUT IT!
               </p>
-              <button
-                onClick={handleClickModal}
+              <Link
+                to="/collab"
                 className="py-1 px-4 uppercase text-[12px] bg-[#f2f2f2] rounded-full font-medium shadow hover:-translate-y-1 transition-all duration-150 ease-in-out text-[#000000]"
               >
                 SO x TUNDE ONAkoya
-              </button>
+              </Link>
             </div>
           </div>
 
@@ -97,7 +94,7 @@ const Hello = () => {
       <Modal isOpen={preOrder} onClose={handleClose}>
         <div className="inline-block relative md:ml-[180px]  lg:ml-[210px] xl:ml-[380px] border border-[#D6DDEB] p-[18px] md:p-[24px] xl:p-[32px] overflow-hidden text-left align-bottom transition-all transform bg-[white]   shadow-xl sm:my-8 sm:align-middle w-full min-w-[360px] md:min-w-[450px] md:max-w-[550px] ">
           <svg
-          onClick={handleClose}
+            onClick={handleClose}
             className="absolute top-2 right-2 hover:bg-gray-100 cursor-pointer h-[20px] rounded-md "
             // width="33"
             // height="33"
@@ -179,8 +176,11 @@ const Hello = () => {
             🌍 Worldwide Shipping Available
           </p>
           <div className="flex w-full justify-center">
-            <button className="py-2 px-4  uppercase text-[12px] bg-[#0e0e0e] text-white  rounded-full font-medium shadow hover:-translate-y-1 transition-all duration-150 ease-in-out">
-              SO x TUNDE ONAkoya
+            <button
+              onClick={handleClickModal}
+              className="py-2 px-4  uppercase text-[12px] bg-[#0e0e0e] text-white  rounded-full font-medium shadow hover:-translate-y-1 transition-all duration-150 ease-in-out"
+            >
+              Click to pre-order
             </button>
           </div>
         </div>
@@ -188,9 +188,8 @@ const Hello = () => {
 
       <Modal isOpen={modal} onClose={handleCloseModal}>
         <div className="inline-block relative md:ml-[180px] lg:ml-[210px] xl:ml-[380px] border border-[#D6DDEB] p-[18px] md:p-[24px] xl:p-[32px] overflow-hidden text-left align-bottom transition-all transform bg-[white]   shadow-xl sm:my-8 sm:align-middle w-full min-w-[360px] md:min-w-[450px] md:max-w-[550px] ">
-         
-        <svg
-          onClick={handleCloseModal}
+          <svg
+            onClick={handleCloseModal}
             className="absolute top-2 right-2 hover:bg-gray-100 cursor-pointer h-[20px] rounded-md "
             // width="33"
             // height="33"
@@ -216,26 +215,37 @@ const Hello = () => {
               className="h-[28px] w-[42px]"
             />
           </div>
-         
-         
+
           <p className=" text-[16px] md:text-lg text-center mb-4  text-[#000] leading-[20px] font-bold  ">
             Wear the story. Live the dream.{" "}
           </p>
-          <p className="text-[13px] font-semibold uppercase md:text-sm text-center mb-4 underline">terms and condition</p>
-          <p className="text-[13px] font-semibold uppercase md:text-sm text-center mb-[90px] md:mb-[100px] xl:mb-[115px] underline ">global shipping</p>
+          <p className="text-[13px] font-semibold uppercase md:text-sm text-center mb-4 underline">
+            terms and condition
+          </p>
+          <p className="text-[13px] font-semibold uppercase md:text-sm text-center mb-[90px] md:mb-[100px] xl:mb-[115px] underline ">
+            global shipping
+          </p>
 
-          <p className="text-[13px] font-semibold uppercase md:text-sm text-center mb-4 ">click to pay 👇🏾</p>
-          
-          
+          <p className="text-[13px] font-semibold uppercase md:text-sm text-center mb-4 ">
+            click to pay 👇🏾
+          </p>
+
           <div className="flex flex-col gap-4 w-full items-center justify-center mb-[40px] md:mb-[50px] xl:mb-[60px]">
-
-            <button className="py-2 px-4 w-[251px]   uppercase text-[12px] bg-[#0e0e0e] text-white  rounded-full font-medium shadow hover:-translate-y-1 transition-all duration-150 ease-in-out">
-            PAY ON WHATSAPP (NIGeria)            </button>
-            <button className="py-2 px-4  w-[251px] uppercase text-[12px] bg-[#0e0e0e] text-white  rounded-full font-medium shadow hover:-translate-y-1 transition-all duration-150 ease-in-out">
-            PAY ON WHATSAPP (INTernational)</button>
+            <Link
+              to="https://links.myvendy.com/samuel-otigba"
+              target="_blank"
+              className="py-2 px-4 w-[251px] text-center   uppercase text-[12px] bg-[#0e0e0e] text-white  rounded-full font-medium shadow hover:-translate-y-1 transition-all duration-150 ease-in-out"
+            >
+              PAY ON WHATSAPP (NIGeria){" "}
+            </Link>
+            <Link
+              to="https://links.myvendy.com/samotigba"
+              target="_blank"
+              className="py-2 px-4  w-[251px] text-center uppercase text-[12px] bg-[#0e0e0e] text-white  rounded-full font-medium shadow hover:-translate-y-1 transition-all duration-150 ease-in-out"
+            >
+              PAY ON WHATSAPP (INTernational){" "}
+            </Link>
           </div>
-          
-         
 
           <p className="text-[13px] font-semibold uppercase md:text-sm text-center ">
             Free Shipping <span className="font-light">globally</span>

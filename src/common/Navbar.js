@@ -69,13 +69,13 @@ const Navbar = () => {
             >
         <div className=" flex  items-center gap-[13px]  md:gap-[50px] lg:gap-[60px] xl:gap-[110px]">
           {nav.map((item, index) => (
-            <Link to={item?.to} className="flex flex-col gap-2 items-center">
+            <Link to={item?.to} className="flex flex-col gap-3 items-center">
               <p
                 className={` ${
                   location.pathname === item?.to
-                    ? "text-white"
+                    ? "text-white font-semibold"
                     : "text-[#3e3e3e]"
-                } font-semibold text-base md:text-[22px]`}
+                } font-medium text-sm  uppercase md:text-[22px]`}
               >
                 {item?.label}
               </p>
