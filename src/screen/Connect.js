@@ -40,7 +40,7 @@ const Connect = () => {
         <div className="flex justify-center gap-[20px] mt-6 ">
           <Link to="https://www.instagram.com/samotigba?" target="_blank">
           <img
-            src="/instagram.svg"
+            src="/Instagram.svg"
             alt=""
             className="h-[24px]   md:h-[40px] lg:h-[60px] xl:h-[80px] "
           />
