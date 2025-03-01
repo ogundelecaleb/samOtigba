@@ -25,7 +25,7 @@ const Shop = () => {
       title: "Dreamers Culotte Pants",
       details:
         "Inspired by Yoruba Kembe trousers, these ¾-length culottes feature an upturned Jawu Asooke hem, blending relaxed wearability with a structured aesthetic. seamlessly integrate into both personal style and contemporary fashion.",
-      src: "/shop1.png",
+      src: "/CulottePant.png",
     },
 
     {
@@ -33,7 +33,7 @@ const Shop = () => {
       title: "Dreamers  Side-Split Top",
       details:
         "Inspired by Fulani attire, this sleeveless vest features a round or V-neck, open sides, and rope fastenings. Its airy silhouette balances freedom and structure, ending just above the hip.",
-      src: "/shop2.png",
+      src: "/slittedTop.png",
     },
     {
       id: 4,
@@ -62,11 +62,12 @@ const Shop = () => {
         <div className=" mt-6 md:mt-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[40px] md:gap-[50px] xl:gap-[69px]">
           {product?.map((item, index) => (
             <div>
-              <div className="h-[300px] w-[273px] mb-3 overflow-hidden bg-gray-200 mx-auto ">
+              <div className="h-[300px] w-[264px] mb-3 overflow-hidden bg-gray-200 mx-auto ">
                 {" "}
                 <img
                   src={item?.src}
-                  className="w-[273px] h-[300px]   transition-all duration-300 hover:scale-110"
+                  loading="lazy"
+                  className="w-[270px] h-[300px]  object-contain  transition-all duration-300 hover:scale-110"
                   alt="dreamers collection"
                 />
               </div>

@@ -36,8 +36,9 @@ const Collab = () => {
             </div>
             <div className=" mb-3 overflow-hidden bg-gray-200 mx-auto ">
               <img
-                src="/collab2.png"
-                className="h-[490px] w-[292px]   transition-all duration-300 hover:scale-110"
+                src="/Tunde.png"
+                loading="lazy"
+                className="h-[490px] w-[292px] object-contain   transition-all duration-300 hover:scale-110"
                 alt="sam Otigba Collaboration"
               />
             </div>
