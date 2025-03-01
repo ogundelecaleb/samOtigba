@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import Navbar from "../common/Navbar";
 import Modal from "../common/Modal";
@@ -6,6 +6,10 @@ import Modal from "../common/Modal";
 const Hello = () => {
   const [preOrder, setPreOder] = useState(false);
   const [modal, setModal] = useState(false);
+
+  useEffect(()=> {
+    setPreOder(true);
+  }, [])
 
   const handleClick = () => {
     setPreOder(true);
@@ -45,7 +49,7 @@ const Hello = () => {
             SAM OTIGBA <span className="text-[#737373] "> {">"}</span> S.0
           </h3>
 
-          <p className="text-gray-50  text-sm md:text-base lg:text-[18px] text-justify font-light mt-[40px] md:mt-[30px] mb-[70px] md:mb-[90px] xl:mb-[100px]">
+          <p className="text-gray-50  text-sm md:text-base lg:text-[18px] text-justify font-light mt-[50px] md:mt-[30px] mb-[70px] md:mb-[90px] xl:mb-[100px]">
             A multi-disciplinary creative, product designer, artist, and brand
             strategist whose work spans fashion, tech, and art. A connector of
             ideas and people, he has designed iconic pieces, mentored emerging
@@ -54,7 +58,7 @@ const Hello = () => {
             legacy.
           </p>
 
-          <div className="flex justify-between mt-12 md:mt-9">
+          <div className="flex justify-between mt-[76px] md:mt-9">
             <div>
               <p className="text-[12px] mb-1 text-center  font-light text-gray-50">
                 DREAMERS COLLECTION

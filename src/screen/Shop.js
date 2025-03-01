@@ -18,40 +18,41 @@ const Shop = () => {
       title: "Dreamers Fila",
       details:
         "Your reimagined Yoruba Fila with a sleek band, snap buttons, and eyelets for custom adornments. A symbol of boldness, individuality, and ambition—honoring tradition with a modern edge.",
-      src: "/shop3.png",
+      src: "/shop1.jpg",
     },
     {
       id: 2,
       title: "Dreamers Culotte Pants",
       details:
         "Inspired by Yoruba Kembe trousers, these ¾-length culottes feature an upturned Jawu Asooke hem, blending relaxed wearability with a structured aesthetic. seamlessly integrate into both personal style and contemporary fashion.",
-      src: "/CulottePant.png",
-    },
+        src: "/shop2.jpg",
+      },
 
     {
       id: 3,
       title: "Dreamers  Side-Split Top",
       details:
         "Inspired by Fulani attire, this sleeveless vest features a round or V-neck, open sides, and rope fastenings. Its airy silhouette balances freedom and structure, ending just above the hip.",
-      src: "/slittedTop.png",
-    },
+        src: "/shop3.jpg",
+      },
     {
       id: 4,
-      title: " Dreamers  Flare Trousers",
+      title: "Dreamers Explorer Trousers",
       details:
-        "Your A reimagined Yoruba Fila with a sleek band, snap buttons, and eyelets for custom adornments. A symbol of boldness, individuality, and ambition—honoring tradition with a modern edge.",
-      src: "/shop1.png",
-    },
+        "  A modern, structured fit for comfort and elegance. Breathable fabric blends functionality with refinement, while a distinct Jawu Aso Oke trim adds a cultural touch—making these trousers more than just an outfit, but a statement.",
+        src: "/shop4.jpg",
+      },
   ];
+
 
   return (
     <div>
-      <div className="bg-[#000000] mt-20 md:mt-0 relative min-h-screen w-full bg-no-repeat bg-contain sm:bg-center  px-[16px]   md:px-[48px] pb-6 ">
-        <h3 className="text-white tracking-tight  text-[40px] md:text-[50px] whitespace-nowrap lg:text-[66px] xl:text-[72px] flex flex-col md:flex-row gap-[4px] leading-[48px] md:leading-[62px] lg:leading-[72px] xl:leading-[82px]">
-          Drop 1 : <span className="text-[#f2f2f2] font-bold"> DREAMERS </span>{" "}
+      <div className="bg-[#000000] mt-20 md:mt-0 relative min-h-screen w-full bg-no-repeat bg-contain sm:bg-center  px-[16px]   md:px-[48px] pt-8 pb-6 ">
+        <h3 className="text-white tracking-tight  text-[40px] md:text-[50px] whitespace-nowrap lg:text-[66px] xl:text-[72px] flex flex-col md:flex-row md:gap-[4px] leading-[48px] md:leading-[62px] lg:leading-[72px] xl:leading-[82px]">
+         <p>Drop 1 : <span className="text-[#f2f2f2] font-bold"> DREAMERS </span>{" "}</p>
           <span className="text-[#737373] font-bold"> COLLECTION</span>
         </h3>
-        <p className="text-white uppercase text-[12px] md:text-[14px] font-light ">
+        <p className="text-white uppercase text-[12px] md:text-[14px] font-light md:tracking-wider">
           {" "}
           <span className="text-[#737373]">
             Be part of the movement, Wear the dream.
@@ -67,23 +68,27 @@ const Shop = () => {
                 <img
                   src={item?.src}
                   loading="lazy"
-                  className="w-[270px] h-[300px]  object-contain  transition-all duration-300 hover:scale-110"
+                  className="w-[270px] h-[300px]    transition-all duration-300 hover:scale-110"
                   alt="dreamers collection"
                 />
               </div>
-
-              <h4 className="text-white font-bold text-[12px] md:text-sm text-center mb-2">
+              <div className="md:min-h-[190px] flex flex-col justify-between">
+                <div><h4 className="text-white font-bold text-[12px] md:text-sm text-center mb-2">
                 {item?.title}
               </h4>
               <p className="text-justify text-white text-[11px] font-light">
                 {item?.details}
-              </p>
+              </p></div>
               <button
                 onClick={handleClickModal}
                 className=" mt-4 py-2 px-4  w-full text-center mx-auto uppercase text-[12px] bg-[#f2f2f2] text-black  rounded-full font-medium shadow hover:-translate-y-1 transition-all duration-150 ease-in-out "
               >
                 Pre-order now
               </button>
+              </div>
+
+              
+              
             </div>
           ))}
         </div>
