@@ -67,8 +67,8 @@ const Shop = () => {
                 {" "}
                 <img
                   src={item?.src}
-                  loading="lazy"
-                  className="w-[270px] h-[300px]    transition-all duration-300 hover:scale-110"
+                  // loading="lazy"
+                  className="w-[270px] h-[300px] object-cover    transition-all duration-300 hover:scale-110"
                   alt="dreamers collection"
                 />
               </div>

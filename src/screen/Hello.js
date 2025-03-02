@@ -7,9 +7,9 @@ const Hello = () => {
   const [preOrder, setPreOder] = useState(false);
   const [modal, setModal] = useState(false);
 
-  useEffect(()=> {
+  useEffect(() => {
     setPreOder(true);
-  }, [])
+  }, []);
 
   const handleClick = () => {
     setPreOder(true);
@@ -28,17 +28,17 @@ const Hello = () => {
   return (
     <div className="bg-[#000000]  mt-20 md:mt-0 min-h-[90vh]   w-full pb-[24px] px-[16px]  md:pb-[32px] md:pr-[48px]">
       <div className=" relative min-h-[90vh]  z-10  flex flex-col md:flex-row  gap-[30px] xl:gap-[30px]  ">
-        <img
+        {/* <img
           src="/samImage.jpeg"
           alt="sam otigba"
-          className=" md:hidden  absolute bottom-0 -z-10 opacity-70 "
-        />
+          className=" md:hidden   absolute bottom-0 -z-10 opacity-70 "
+        /> */}
 
         <div className="w-full md:w-[40%] relative  hidden md:block">
           <img
             src="/samHeroImage.png"
             alt="sam otigba"
-            className="  h-[600px] w-[610px] left-0"
+            className="  h-[600px] w-[610px] object-cover  left-0"
           />
         </div>
         <div className="w-full md:w-[60%] pt-[50px]">
@@ -48,6 +48,13 @@ const Hello = () => {
           <h3 className="text-[#ffffff] font-semibold text-[40px] md:text-[50px] lg:text-[62px] xl:text-[72px] leading-tight">
             SAM OTIGBA <span className="text-[#737373] "> {">"}</span> S.0
           </h3>
+
+            {" "}
+            <img
+              src="/samImage.jpeg"
+              alt="sam otigba"
+              className=" md:hidden object-cover h-[420px] w-full  mt-4 opacity-70 "
+            />
 
           <p className="text-gray-50  text-sm md:text-base lg:text-[18px] text-justify font-light mt-[50px] md:mt-[30px] mb-[70px] md:mb-[90px] xl:mb-[100px]">
             A multi-disciplinary creative, product designer, artist, and brand
@@ -167,9 +174,9 @@ const Hello = () => {
             That’s exactly what The Dreamers Collection represents.
           </p>
 
-          <p className="text-[12px] md:text-sm font-semibold text-center mb-3 ">
+          <Link to="/collab" className="text-[12px] mx-auto md:text-sm font-semibold text-center mb-3 ">
             🔗 <span className="underline">READ ALL ABOUT IT!</span>
-          </p>
+          </Link>
 
           <div className="w-[170px] mx-auto h-[1px] bg-[#737373] mb-3" />
           <p className="text-[12px] md:text-sm font-light text-center">

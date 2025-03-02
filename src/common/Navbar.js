@@ -67,9 +67,9 @@ const Navbar = () => {
                 duration: 0.9,
               }}
             >
-        <div className=" flex  items-center gap-[13px]  md:gap-[50px] lg:gap-[60px] xl:gap-[110px]">
+        <div className=" flex   gap-[13px]  md:gap-[50px] lg:gap-[60px] xl:gap-[110px]">
           {nav.map((item, index) => (
-            <Link to={item?.to} className="flex flex-col gap-3 items-center">
+            <Link to={item?.to} className="flex flex-col gap-2 items-center">
               <p
                 className={` ${
                   location.pathname === item?.to

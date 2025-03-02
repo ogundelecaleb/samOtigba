@@ -29,18 +29,18 @@ const Collab = () => {
           </p>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-[24px] mt-[30px]">
-            <div className=" mb-3 overflow-hidden bg-gray-200 mx-auto ">
+            <div className=" mb-3 w-full md:w-[292px] overflow-hidden bg-gray-200 mx-auto ">
               <img
                 src="/collab1.png"
-                className="h-[410px] w-full md:w-[292px]   transition-all duration-300 hover:scale-110"
+                className="h-[410px] w-full md:w-[292px] object-cover   transition-all duration-300 hover:scale-110"
                 alt="sam Otigba Collaboration"
               />
             </div>
-            <div className=" mb-3 overflow-hidden  mx-auto ">
+            <div className=" w-full md:w-[292px] mb-3 overflow-hidden  mx-auto ">
               <img
                 src="/Tunde.png"
                 loading="lazy"
-                className="h-[410px] w-full md:w-[292px]    transition-all duration-300 hover:scale-110"
+                className="h-[410px] w-full md:w-[292px] object-cover    transition-all duration-300 hover:scale-110"
                 alt="sam Otigba Collaboration"
               />
             </div>
