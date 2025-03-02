@@ -38,7 +38,7 @@ const Hello = () => {
           <img
             src="/samHeroImage.png"
             alt="sam otigba"
-            className="  h-[600px] w-[610px] object-cover  left-0"
+            className="  h-[630px] w-[610px]  object-cover  left-0"
           />
         </div>
         <div className="w-full md:w-[60%] pt-[50px]">
@@ -56,7 +56,7 @@ const Hello = () => {
               className=" md:hidden object-cover h-[420px] w-full  mt-4 opacity-70 "
             />
 
-          <p className="text-gray-50  text-sm md:text-base lg:text-[18px] text-justify font-light mt-[50px] md:mt-[30px] mb-[70px] md:mb-[90px] xl:mb-[100px]">
+          <p className="text-gray-50  text-sm md:text-base lg:text-[18px] text-justify font-light mt-[40px] md:mt-[30px] mb-[70px] md:mb-[90px] xl:mb-[100px]">
             A multi-disciplinary creative, product designer, artist, and brand
             strategist whose work spans fashion, tech, and art. A connector of
             ideas and people, he has designed iconic pieces, mentored emerging
@@ -65,7 +65,7 @@ const Hello = () => {
             legacy.
           </p>
 
-          <div className="flex justify-between mt-[76px] md:mt-9">
+          <div className="flex justify-between mt-[40px] md:mt-9">
             <div>
               <p className="text-[12px] mb-1 text-center  font-light text-gray-50">
                 DREAMERS COLLECTION
@@ -91,12 +91,12 @@ const Hello = () => {
             </div>
           </div>
 
-          <div className="mt-[60px] md:mt-[70px] xl:mt-[90px]  ">
-            <p className="text-[14px] text-center font-light md:text-base text-gray-50 ">
+          <div className="mt-[50px] md:mt-[70px] xl:mt-[80px]  ">
+            <p className="text-[13px] text-center font-light md:text-base text-gray-50 ">
               📌 Pre-orders open{" "}
               <span className="font-semibold">March 1st </span> . 🌍{" "}
-              <span className="font-semibold">Worldwide Shipping</span>{" "}
-              Available
+              <span className="font-semibold whitespace-nowrap">Free Shipping Worldwide </span>
+              
             </p>
           </div>
         </div>
@@ -170,13 +170,15 @@ const Hello = () => {
             we shape culture. We redefine narratives. We build legacies.
           </p>
 
-          <p className="text-[12px] md:text-sm font-light text-center mb-3">
+          <p className="text-[12px] md:text-sm font-light  text-center mb-3">
             That’s exactly what The Dreamers Collection represents.
           </p>
-
-          <Link to="/collab" className="text-[12px] mx-auto md:text-sm font-semibold text-center mb-3 ">
+<div className="flex justify-center ">
+<Link to="/collab" className="text-[12px]   mx-auto md:text-sm font-semibold text-center mb-3 ">
             🔗 <span className="underline">READ ALL ABOUT IT!</span>
           </Link>
+</div>
+         
 
           <div className="w-[170px] mx-auto h-[1px] bg-[#737373] mb-3" />
           <p className="text-[12px] md:text-sm font-light text-center">
@@ -184,7 +186,7 @@ const Hello = () => {
           </p>
 
           <p className="text-[12px] md:text-sm font-semibold text-center mb-7">
-            🌍 Worldwide Shipping Available
+            🌍 Free Shipping Worldwide
           </p>
           <div className="flex w-full justify-center">
             <button

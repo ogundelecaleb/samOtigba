@@ -37,7 +37,7 @@ const Shop = () => {
       },
     {
       id: 4,
-      title: "Dreamers Explorer Trousers",
+      title: "Dreamers Explorer Pants",
       details:
         "  A modern, structured fit for comfort and elegance. Breathable fabric blends functionality with refinement, while a distinct Jawu Aso Oke trim adds a cultural touch—making these trousers more than just an outfit, but a statement.",
         src: "/shop4.jpg",
