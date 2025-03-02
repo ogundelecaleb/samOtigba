@@ -127,9 +127,14 @@ const Shop = () => {
           <p className=" text-[16px] md:text-lg text-center mb-4  text-[#000] leading-[20px] font-bold  ">
             Wear the story. Live the dream.{" "}
           </p>
-          <p className="text-[13px] font-semibold uppercase md:text-sm text-center mb-4 underline">
-            terms and condition
-          </p>
+           <div className="flex justify-center ">
+                     <Link
+                       to="/terms-and-condition"
+                       className="text-[13px] font-semibold uppercase md:text-sm text-center mb-4 underline"
+                     >
+                       terms and condition
+                     </Link>
+                   </div>
           <p className="text-[13px] font-semibold uppercase md:text-sm text-center mb-[90px] md:mb-[100px] xl:mb-[115px] underline ">
             global shipping
           </p>

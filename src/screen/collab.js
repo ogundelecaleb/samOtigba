@@ -14,14 +14,12 @@ const Collab = () => {
   };
   return (
     <div className="bg-[#000000] mt-20 md:mt-0 relative min-h-screen w-full    gap-[30px] xl:gap-[30px]   py-[24px] px-[16px]  md:px-[48px] ">
-     
       <div className="flex flex-col md:flex-row gap-[40px]  ">
-       
         <div className="w-full md:w-[50%] relative">
-        <h2 className="text-[#737373] tracking-tight font-bold text-[40px] md:text-[50px] whitespace-nowrap lg:text-[52px] xl:text-[67px]  leading-[48px] md:leading-[62px] lg:leading-[72px] xl:leading-[82px]">
-        {" "}
-        WE ARE <span className="text-[#ffffff] ">DREAMERS</span>
-      </h2>
+          <h2 className="text-[#737373] tracking-tight font-bold text-[40px] md:text-[50px] whitespace-nowrap lg:text-[52px] xl:text-[67px]  leading-[48px] md:leading-[62px] lg:leading-[72px] xl:leading-[82px]">
+            {" "}
+            WE ARE <span className="text-[#ffffff] ">DREAMERS</span>
+          </h2>
           <p className="text-white px-2 md:px-0  uppercase text-[12px] md:text-[14px] lg:text-[14.8] xl:text-[15.6px] font-light ">
             What happens when a{" "}
             <span className="text-[#737373]">chess genius </span> and a{" "}
@@ -94,7 +92,10 @@ const Collab = () => {
               And that ? That is a story worth telling.
             </p>
 
-            <button onClick={handleClickModal} className="py-2 px-4 mb- whitespace-nowrap  uppercase text-[12px] bg-[#f2f2f2] text-black  rounded-full font-medium shadow hover:-translate-y-1 transition-all duration-150 ease-in-out">
+            <button
+              onClick={handleClickModal}
+              className="py-2 px-4 mb- whitespace-nowrap  uppercase text-[12px] bg-[#f2f2f2] text-black  rounded-full font-medium shadow hover:-translate-y-1 transition-all duration-150 ease-in-out"
+            >
               Pre-order now
             </button>
           </div>
@@ -134,9 +135,14 @@ const Collab = () => {
           <p className=" text-[16px] md:text-lg text-center mb-4  text-[#000] leading-[20px] font-bold  ">
             Wear the story. Live the dream.{" "}
           </p>
-          <p className="text-[13px] font-semibold uppercase md:text-sm text-center mb-4 underline">
-            terms and condition
-          </p>
+          <div className="flex justify-center ">
+            <Link
+              to="/terms-and-condition"
+              className="text-[13px] font-semibold uppercase md:text-sm text-center mb-4 underline"
+            >
+              terms and condition
+            </Link>
+          </div>
           <p className="text-[13px] font-semibold uppercase md:text-sm text-center mb-[90px] md:mb-[100px] xl:mb-[115px] underline ">
             global shipping
           </p>

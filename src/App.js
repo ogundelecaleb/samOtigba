@@ -11,6 +11,7 @@ import Collab from "./screen/collab";
 import Shop from "./screen/Shop";
 import Navbar from "./common/Navbar";
 import Connect from "./screen/Connect";
+import TermsAndCondition from "./screen/TermsAndCondition";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
 
         <Routes>
           <Route index element={<Hello />} />
+          <Route path="/terms-and-condition" element={<TermsAndCondition />} />
           <Route path="/collab" element={<Collab />} />
           <Route path="/shop" element={<Shop />} />
           <Route path="/connect" element={<Connect />} />

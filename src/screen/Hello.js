@@ -47,15 +47,12 @@ const Hello = () => {
           </h3>
           <h3 className="text-[#ffffff] font-semibold text-[40px] md:text-[50px] lg:text-[62px] xl:text-[72px] leading-tight">
             SAM OTIGBA <span className="text-[#737373] "> {">"}</span> S.0
-          </h3>
-
-            {" "}
-            <img
-              src="/samImage.jpeg"
-              alt="sam otigba"
-              className=" md:hidden object-cover h-[420px] w-full  mt-4 opacity-70 "
-            />
-
+          </h3>{" "}
+          <img
+            src="/samImage.jpeg"
+            alt="sam otigba"
+            className=" md:hidden object-cover h-[420px] w-full  mt-4 opacity-70 "
+          />
           <p className="text-gray-50  text-sm md:text-base lg:text-[18px] text-justify font-light mt-[40px] md:mt-[30px] mb-[50px] md:mb-[90px] xl:mb-[90px]">
             A multi-disciplinary creative, product designer, artist, and brand
             strategist whose work spans fashion, tech, and art. A connector of
@@ -64,7 +61,6 @@ const Hello = () => {
             to design isn’t just about aesthetics—storytelling, identity, and
             legacy.
           </p>
-
           <div className="flex justify-between mt-[20px] md:mt-9">
             <div>
               <p className="text-[12px] mb-1 text-center  font-light text-gray-50">
@@ -90,13 +86,13 @@ const Hello = () => {
               </Link>
             </div>
           </div>
-
           <div className="mt-[50px] md:mt-[70px] xl:mt-[80px]  mb-6 md:mb-0 ">
             <p className="text-[13px] text-center font-light md:text-base text-gray-50 ">
               📌 Pre-orders open{" "}
               <span className="font-semibold">March 1st </span> . 🌍{" "}
-              <span className="font-semibold whitespace-nowrap">Free Shipping Worldwide </span>
-              
+              <span className="font-semibold whitespace-nowrap">
+                Free Shipping Worldwide{" "}
+              </span>
             </p>
           </div>
         </div>
@@ -173,12 +169,14 @@ const Hello = () => {
           <p className="text-[12px] md:text-sm font-light  text-center mb-3">
             That’s exactly what The Dreamers Collection represents.
           </p>
-<div className="flex justify-center ">
-<Link to="/collab" className="text-[12px]  hover:-translate-y-1 transition-all duration-150 ease-in-out  mx-auto md:text-sm font-semibold text-center mb-3 ">
-            🔗 <span className="underline">READ ALL ABOUT IT!</span>
-          </Link>
-</div>
-         
+          <div className="flex justify-center ">
+            <Link
+              to="/collab"
+              className="text-[12px]  hover:-translate-y-1 transition-all duration-150 ease-in-out  mx-auto md:text-sm font-semibold text-center mb-3 "
+            >
+              🔗 <span className="underline">READ ALL ABOUT IT!</span>
+            </Link>
+          </div>
 
           <div className="w-[170px] mx-auto h-[1px] bg-[#737373] mb-3" />
           <p className="text-[12px] md:text-sm font-light text-center">
@@ -232,9 +230,15 @@ const Hello = () => {
           <p className=" text-[16px] md:text-lg text-center mb-4  text-[#000] leading-[20px] font-bold  ">
             Wear the story. Live the dream.{" "}
           </p>
-          <p className="text-[13px] font-semibold uppercase md:text-sm text-center mb-4 underline">
-            terms and condition
-          </p>
+          <div className="flex justify-center ">
+            <Link
+              to="/terms-and-condition"
+              className="text-[13px] font-semibold uppercase md:text-sm text-center mb-4 underline"
+            >
+              terms and condition
+            </Link>
+          </div>
+
           <p className="text-[13px] font-semibold uppercase md:text-sm text-center mb-[90px] md:mb-[100px] xl:mb-[115px] underline ">
             global shipping
           </p>
