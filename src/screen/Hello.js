@@ -56,7 +56,7 @@ const Hello = () => {
               className=" md:hidden object-cover h-[420px] w-full  mt-4 opacity-70 "
             />
 
-          <p className="text-gray-50  text-sm md:text-base lg:text-[18px] text-justify font-light mt-[40px] md:mt-[30px] mb-[70px] md:mb-[90px] xl:mb-[100px]">
+          <p className="text-gray-50  text-sm md:text-base lg:text-[18px] text-justify font-light mt-[40px] md:mt-[30px] mb-[50px] md:mb-[90px] xl:mb-[90px]">
             A multi-disciplinary creative, product designer, artist, and brand
             strategist whose work spans fashion, tech, and art. A connector of
             ideas and people, he has designed iconic pieces, mentored emerging
@@ -65,7 +65,7 @@ const Hello = () => {
             legacy.
           </p>
 
-          <div className="flex justify-between mt-[40px] md:mt-9">
+          <div className="flex justify-between mt-[20px] md:mt-9">
             <div>
               <p className="text-[12px] mb-1 text-center  font-light text-gray-50">
                 DREAMERS COLLECTION
@@ -91,7 +91,7 @@ const Hello = () => {
             </div>
           </div>
 
-          <div className="mt-[50px] md:mt-[70px] xl:mt-[80px]  ">
+          <div className="mt-[50px] md:mt-[70px] xl:mt-[80px]  mb-6 md:mb-0 ">
             <p className="text-[13px] text-center font-light md:text-base text-gray-50 ">
               📌 Pre-orders open{" "}
               <span className="font-semibold">March 1st </span> . 🌍{" "}
@@ -174,7 +174,7 @@ const Hello = () => {
             That’s exactly what The Dreamers Collection represents.
           </p>
 <div className="flex justify-center ">
-<Link to="/collab" className="text-[12px]   mx-auto md:text-sm font-semibold text-center mb-3 ">
+<Link to="/collab" className="text-[12px]  hover:-translate-y-1 transition-all duration-150 ease-in-out  mx-auto md:text-sm font-semibold text-center mb-3 ">
             🔗 <span className="underline">READ ALL ABOUT IT!</span>
           </Link>
 </div>
