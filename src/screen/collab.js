@@ -58,7 +58,7 @@ const Collab = () => {
     focusOnSelect: true,
     dots: true, 
     dotsClass: "slick-dots custom-dots",
-    responsive: [{ breakpoint: 768, settings: { slidesToShow: 1 } }],
+    responsive: [{ breakpoint: 768, settings: { slidesToShow: 2 } }],
   };
   return (
     <div className="bg-[#000000] mt-20 md:mt-0 relative min-h-screen w-full    gap-[30px] xl:gap-[30px]   py-[24px] px-[16px]  md:px-[48px] ">
