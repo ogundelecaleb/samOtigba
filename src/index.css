@@ -15,3 +15,58 @@ body {
 input {
     font-size: 16px;
   }
+
+
+
+  .slide-item {
+    background: #f1f1f1;
+    height: 180px;
+    margin: 0 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  /* All slides get a lower z-index by default */
+  .slick-slide {
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+    z-index: 1;
+  }
+  
+  /* Active slide gets higher z-index and is taller */
+  .slick-center .slide-item {
+    color: white;
+    height: 230px; /* Taller active slide */
+    transform: scale(1.08);
+    z-index: 10; /* This puts the active slide in front */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  }
+  
+  /* Reduce padding to allow more overlap */
+  .slick-list {
+    padding: 30px 0 !important;
+    overflow: visible;
+  }
+
+  /* Custom styling for dots */
+.custom-dots {
+    bottom: -30px; /* Position the dots below the carousel */
+  }
+  
+  .custom-dots li {
+    margin: 0 5px;
+  }
+  
+  .custom-dots li button:before {
+    font-size: 12px;
+    color: #d1d1d1;
+    opacity: 1;
+  }
+  
+  .custom-dots li.slick-active button:before {
+    color: #007bff; /* Active dot color matches the active slide */
+    opacity: 1;
+  }

@@ -23,10 +23,10 @@ const TermsAndCondition = () => {
       </div>
 
       <m.div
-          initial={{ y: -20, opacity: 0.4 }}
+          initial={{ y: -10, opacity: 0.4 }}
           animate={{
             // x: selectedInfo === 1 ? 0 : 100,
-            x: 0,
+            y: 0,
             opacity: 1,
             // scale: 1,
           }}
@@ -96,6 +96,10 @@ const TermsAndCondition = () => {
         Customers acknowledge that The Dreamers Collection - S.O X Tunde Onakoya
         is an exclusive collaboration available only through official channels.
       </p>
+      
+
+
+
       <p className="text-sm  font-light mb-2 text-justify">
         <span className="font-medium"> 7. MODIFICATION OF TERMS </span> <br />
         S.O reserves the right to update these T&Cs at any time, with changes

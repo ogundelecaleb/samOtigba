@@ -2,9 +2,20 @@ import React, { useState } from "react";
 import Navbar from "../common/Navbar";
 import Modal from "../common/Modal";
 import { Link } from "react-router-dom";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const Collab = () => {
   const [modal, setModal] = useState(false);
+  const [preview, setPreview] = useState(false);
+
+  const handleClick = () => {
+    setPreview(true);
+  };
+  const handleClosePreview = () => {
+    setPreview(false);
+  };
 
   const handleClickModal = () => {
     setModal(true);
@@ -12,10 +23,47 @@ const Collab = () => {
   const handleCloseModal = () => {
     setModal(false);
   };
+
+  const design = [
+    {
+      label: "Design1",
+      src: "/design1.jpg",
+    },
+    {
+      label: "Design2",
+      src: "/design2.jpg",
+    },
+    {
+      label: "Design3",
+      src: "/design3.jpg",
+    },
+    {
+      label: "Design4",
+      src: "/design4.jpg",
+    },
+    {
+      label: "Design5",
+      src: "/design5.jpg",
+    },
+    {
+      label: "Design6",
+      src: "/design6.jpg",
+    },
+  ];
+  const settings = {
+    centerMode: true,
+    centerPadding: "0px",
+    slidesToShow: 3,
+    speed: 500,
+    focusOnSelect: true,
+    dots: true, 
+    dotsClass: "slick-dots custom-dots",
+    responsive: [{ breakpoint: 768, settings: { slidesToShow: 1 } }],
+  };
   return (
     <div className="bg-[#000000] mt-20 md:mt-0 relative min-h-screen w-full    gap-[30px] xl:gap-[30px]   py-[24px] px-[16px]  md:px-[48px] ">
-      <div className="flex flex-col md:flex-row gap-[40px]  ">
-        <div className="w-full md:w-[50%] relative">
+      <div className="flex flex-col md:flex-row gap-[40px]   ">
+        <div className="w-full md:w-[50%] relative ">
           <h2 className="text-[#737373] tracking-tight font-bold text-[40px] md:text-[50px] whitespace-nowrap lg:text-[52px] xl:text-[67px]  leading-[48px] md:leading-[62px] lg:leading-[72px] xl:leading-[82px]">
             {" "}
             WE ARE <span className="text-[#ffffff] ">DREAMERS</span>
@@ -42,6 +90,12 @@ const Collab = () => {
                 alt="sam Otigba Collaboration"
               />
             </div>
+          </div>
+          <div className="w-full overflow-hidden hidden md:block">
+            <h2 className="text-[#737373] tracking-tighter md:mt-[50px]  font-bold text-[40px] md:text-[50px] whitespace-nowrap lg:text-[52px] xl:text-[67px] h-[200px]  leading-[48px] md:leading-[62px] lg:leading-[72px] xl:leading-[120px]">
+              {" "}
+              S.O <span className="text-[#ffffff] ">X</span> TUNDE ONAKOYA
+            </h2>
           </div>
         </div>
         <div className="w-full md:w-[50%] relative">
@@ -79,13 +133,29 @@ const Collab = () => {
           <p className="text-white  uppercase text-justify text-[12px] md:text-[13.4px] font-bold  ">
             OUR DESIGN: Heritage Redefined
           </p>
-          <p className="text-white   text-justify text-[12px] md:text-[12.8px]  lg:text-[13.4px] xl:text-[14px] font-light  mb-3">
+          <div className="flex gap-[24px] mt-[20px]">
+            {design.slice(0, 5).map((design, index) => (
+              <button
+                key={index}
+                onClick={handleClick}
+                className=" mb-3 w-full  overflow-hidden bg-gray-200 mx-auto "
+              >
+                <img
+                  src={design?.src}
+                  className="h-[260px] w-full  object-cover   transition-all duration-300 hover:scale-110"
+                  alt="sam Otigba Collaboration"
+                />
+              </button>
+            ))}
+          </div>
+
+          {/* <p className="text-white   text-justify text-[12px] md:text-[12.8px]  lg:text-[13.4px] xl:text-[14px] font-light  mb-3">
             Crafted from premium cotton blends and luxurious Aso Oke, The
             Dreamers Collection fuses heritage with contemporary tailoring.
             Designed for comfort, versatility, and bold cultural expression,
             each piece features subtle Aso Oke accents—seamlessly blending
             tradition with modern craftsmanship.
-          </p>
+          </p> */}
 
           <div className="flex flex-col md:flex-row gap-5 items-center justify-between my-4">
             <p className="text-white  text-justify text-[12px] md:text-[12.8px]  lg:text-[13.4px] xl:text-[14px] font-light ">
@@ -102,8 +172,45 @@ const Collab = () => {
         </div>
       </div>
 
+      <Modal isOpen={preview} onClose={handleClosePreview}>
+        <div className="inline-block relative rounded-lg md:ml-[180px] lg:ml-[210px] xl:ml-[380px] border border-[#D6DDEB] p-[18px] md:p-[24px] xl:p-[32px] overflow-hidden text-left align-bottom transition-all transform bg-[white]   shadow-xl sm:my-8 sm:align-middle w-full min-w-[360px] md:min-w-[450px] md:max-w-[550px] ">
+          <svg
+            onClick={handleClosePreview}
+            className="absolute top-2 right-2 hover:bg-gray-100 cursor-pointer h-[20px] rounded-md "
+            // width="33"
+            // height="33"
+            viewBox="0 0 33 33"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M26.5108 25.0517C26.6066 25.1475 26.6826 25.2613 26.7345 25.3865C26.7863 25.5117 26.813 25.6458 26.813 25.7813C26.813 25.9168 26.7863 26.051 26.7345 26.1762C26.6826 26.3014 26.6066 26.4151 26.5108 26.5109C26.415 26.6068 26.3013 26.6828 26.1761 26.7346C26.0509 26.7865 25.9167 26.8132 25.7812 26.8132C25.6457 26.8132 25.5115 26.7865 25.3864 26.7346C25.2612 26.6828 25.1474 26.6068 25.0516 26.5109L16.5 17.958L7.94832 26.5109C7.75482 26.7045 7.49237 26.8132 7.21871 26.8132C6.94506 26.8132 6.68261 26.7045 6.4891 26.5109C6.2956 26.3174 6.18689 26.055 6.18689 25.7813C6.18689 25.5077 6.2956 25.2452 6.4891 25.0517L15.042 16.5001L6.4891 7.94844C6.2956 7.75494 6.18689 7.49249 6.18689 7.21884C6.18689 6.94518 6.2956 6.68273 6.4891 6.48923C6.68261 6.29572 6.94506 6.18701 7.21871 6.18701C7.49237 6.18701 7.75482 6.29572 7.94832 6.48923L16.5 15.0422L25.0516 6.48923C25.2451 6.29572 25.5076 6.18701 25.7812 6.18701C26.0549 6.18701 26.3173 6.29572 26.5108 6.48923C26.7043 6.68273 26.813 6.94518 26.813 7.21884C26.813 7.49249 26.7043 7.75494 26.5108 7.94844L17.9579 16.5001L26.5108 25.0517Z"
+              fill="black"
+            />
+          </svg>
+
+          <div>
+            <Slider {...settings} className="carousel">
+              {design.map((item, index) => (
+                   <div
+                   key={index} className="slide-item">
+                <div
+                  className=" w-full card overflow-hidden bg-gray-200 "
+                >
+                  <img
+                    src={item?.src}
+                    className="h-[230px] object-cover    transition-all duration-300 hover:scale-110"
+                    alt="sam Otigba Collaboration"
+                  />
+                </div></div>
+              ))}
+            </Slider>
+          </div>
+        </div>
+      </Modal>
+
       <Modal isOpen={modal} onClose={handleCloseModal}>
-        <div className="inline-block relative md:ml-[180px] lg:ml-[210px] xl:ml-[380px] border border-[#D6DDEB] p-[18px] md:p-[24px] xl:p-[32px] overflow-hidden text-left align-bottom transition-all transform bg-[white]   shadow-xl sm:my-8 sm:align-middle w-full min-w-[360px] md:min-w-[450px] md:max-w-[550px] ">
+        <div className="inline-block relative rounded-lg md:ml-[180px] lg:ml-[210px] xl:ml-[380px] border border-[#D6DDEB] p-[18px] md:p-[24px] xl:p-[32px] overflow-hidden text-left align-bottom transition-all transform bg-[white]   shadow-xl sm:my-8 sm:align-middle w-full min-w-[360px] md:min-w-[450px] md:max-w-[550px] ">
           <svg
             onClick={handleCloseModal}
             className="absolute top-2 right-2 hover:bg-gray-100 cursor-pointer h-[20px] rounded-md "
