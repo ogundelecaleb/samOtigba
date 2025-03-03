@@ -99,7 +99,7 @@ const Hello = () => {
       </div>
 
       <Modal isOpen={preOrder} onClose={handleClose}>
-        <div className="inline-block relative md:ml-[180px]  lg:ml-[210px] xl:ml-[380px] border border-[#D6DDEB] p-[18px] md:p-[24px] xl:p-[32px] overflow-hidden text-left align-bottom transition-all transform bg-[white]   shadow-xl sm:my-8 sm:align-middle w-full min-w-[360px] md:min-w-[450px] md:max-w-[550px] ">
+        <div className="inline-block rounded-lg relative md:ml-[180px]  lg:ml-[210px] xl:ml-[380px] border border-[#D6DDEB] p-[18px] md:p-[24px] xl:p-[32px] overflow-hidden text-left align-bottom transition-all transform bg-[white]   shadow-xl sm:my-8 sm:align-middle w-full min-w-[360px] md:min-w-[450px] md:max-w-[550px] ">
           <svg
             onClick={handleClose}
             className="absolute top-2 right-2 hover:bg-gray-100 cursor-pointer h-[20px] rounded-md "
@@ -198,7 +198,7 @@ const Hello = () => {
       </Modal>
 
       <Modal isOpen={modal} onClose={handleCloseModal}>
-        <div className="inline-block relative md:ml-[180px] lg:ml-[210px] xl:ml-[380px] border border-[#D6DDEB] p-[18px] md:p-[24px] xl:p-[32px] overflow-hidden text-left align-bottom transition-all transform bg-[white]   shadow-xl sm:my-8 sm:align-middle w-full min-w-[360px] md:min-w-[450px] md:max-w-[550px] ">
+        <div className="inline-block rounded-lg relative md:ml-[180px] lg:ml-[210px] xl:ml-[380px] border border-[#D6DDEB] p-[18px] md:p-[24px] xl:p-[32px] overflow-hidden text-left align-bottom transition-all transform bg-[white]   shadow-xl sm:my-8 sm:align-middle w-full min-w-[360px] md:min-w-[450px] md:max-w-[550px] ">
           <svg
             onClick={handleCloseModal}
             className="absolute top-2 right-2 hover:bg-gray-100 cursor-pointer h-[20px] rounded-md "
